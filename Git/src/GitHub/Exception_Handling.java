@@ -41,6 +41,7 @@ public class Exception_Handling {
 		catch (ArrayIndexOutOfBoundsException Exception) {
 			System.out.println("some problem with the code");
 		}
+		
 
 		catch (Exception e) {
 			System.out.println("Some exception has occured");
