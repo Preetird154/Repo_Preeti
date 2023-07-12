@@ -18,7 +18,7 @@ public class Throws_KeyWord {
 	}
 	
 	public static void main(String[] args) {
-		
+		System.out.println("main is starting");
 		try
 		{
 			new Throws_KeyWord().beta();
@@ -28,6 +28,6 @@ public class Throws_KeyWord {
 		{
 			System.out.println("Exception was handled by main()");
 		}
-		
+		System.out.println("main is ending");
 	}
 }
