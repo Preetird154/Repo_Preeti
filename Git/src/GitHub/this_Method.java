@@ -21,7 +21,7 @@ class Laptop
 	
 	public Laptop(String brand,String color,int price)
 	{
-		//super();
+		super();
 		System.out.println("control is inside 3-parameterized constuctor");
 		System.out.println("Brand: "+brand+" \nColor: "+color+" \nprice: "+price);
 	}
