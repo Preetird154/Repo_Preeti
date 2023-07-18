@@ -13,6 +13,7 @@ public class Ascending_Numbers {
 			ar[i]=sc.nextInt();
 		}
 		int temp;
+		System.out.println("The array after Ascending order");
 		for(int i=0;i<n;i++)
 		{
 			for(int j=i+1;j<n;j++)
