@@ -93,7 +93,79 @@ public class Practice_WebSite {
 		
 		Thread.sleep(2000);
 		
+		By a=By.id("newsletter");
+		WebElement b=d.findElement(a);
+		b.click();
 		
-
+		Thread.sleep(2000);
+		
+		By a1=By.id("optin");
+		WebElement c=d.findElement(a1);
+		c.click();
+		
+		//ADDRESS INFORMATION
+		
+		By f_name=By.id("first_name");
+		WebElement first_name=d.findElement(f_name);
+		first_name.sendKeys("Keerthi");
+		
+		Thread.sleep(2000);
+		
+		By l_name=By.id("last_name");
+		WebElement Last_name=d.findElement(l_name);
+		Last_name.sendKeys("A B");
+		
+		Thread.sleep(2000);
+		
+		By comp=By.id("company");
+		WebElement company=d.findElement(comp);
+		company.sendKeys("XYZ company");
+		
+		Thread.sleep(2000);
+		
+		By add=By.id("address1");
+		WebElement address=d.findElement(add);
+		address.sendKeys("BTM Layout");
+		
+		Thread.sleep(2000);
+		
+		By ad=By.id("address2");
+		WebElement address1=d.findElement(ad);
+		address1.sendKeys("Bangalore");
+		
+		Thread.sleep(2000);
+		
+		By con=By.id("country");
+		WebElement country=d.findElement(con);
+		Select s=new Select(country);
+		s.selectByVisibleText("India");
+		
+		Thread.sleep(2000);
+		
+		By state=By.id("state");
+		WebElement state1=d.findElement(state);
+		state1.sendKeys("Karnataka");
+		
+		Thread.sleep(2000);
+		
+		By city=By.id("city");
+		WebElement city1=d.findElement(city);
+		city1.sendKeys("Bangalore");
+		
+		By zip=By.id("zipcode");
+		WebElement zip_code=d.findElement(zip);
+		zip_code.sendKeys("560076");
+		
+		Thread.sleep(2000);
+		
+		By num=By.id("mobile_number");
+		WebElement mobile_num=d.findElement(num);
+		mobile_num.sendKeys("1234567856");
+		
+		Thread.sleep(2000);
+		
+		By create=By.xpath("//button[@data-qa=\"create-account\"]");
+		WebElement create_account=d.findElement(create);
+		create_account.click();
 	}
 }
