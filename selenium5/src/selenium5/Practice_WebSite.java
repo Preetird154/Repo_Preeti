@@ -44,13 +44,13 @@ public class Practice_WebSite {
 		
 		By c1=By.xpath("//input[ @data-qa=\"signup-name\"]");
 		WebElement d1=d.findElement(c1);
-		d1.sendKeys("ABCD");
+		d1.sendKeys("EFGH");
 		
 		Thread.sleep(2000);
 		
 		By c2=By.xpath("//input[ @data-qa=\"signup-email\"]");
 		WebElement d2=d.findElement(c2);
-		d2.sendKeys("Abcd@1234");
+		d2.sendKeys("efgh@1234");
 		
 		Thread.sleep(2000);
 		
