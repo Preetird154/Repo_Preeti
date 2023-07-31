@@ -37,11 +37,18 @@ public class W3_Schools {
 		
 		Thread.sleep(2000);
 		
-		By exe=By.xpath("(//i[@class='fa fa-caret-down'])[2]");
-		WebElement Exe=d.findElement(exe);
-	    Exe.click();
+//	   By a2=By.xpath("//iframe[@id='classic-menu']");
+//		WebElement Exe=d.findElement(a2);
+//	    d.switchTo().frame(Exe);
+//	    
+//	    By a3=By.xpath("//a[@id='navbtn_exercises']");
+//	    WebElement a4=d.findElement(a3);
+//	    a4.click();
 		
-	    Thread.sleep(2000);
+
+//		By logout=By.id("logout-link");
+//		WebElement Logout=d.findElement(logout);
+//		Logout.click();
 	}
 
 }
