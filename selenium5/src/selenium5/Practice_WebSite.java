@@ -26,7 +26,7 @@ public class Practice_WebSite {
 		
 		By b2=By.xpath("//input[ @data-qa=\"login-email\"]");
 		WebElement e2=d.findElement(b2);
-		e2.sendKeys("abcd@gmail.com");
+		e2.sendKeys("sdfg@gmail.com");
 		
 		Thread.sleep(2000);
 		
@@ -44,13 +44,13 @@ public class Practice_WebSite {
 		
 		By c1=By.xpath("//input[ @data-qa=\"signup-name\"]");
 		WebElement d1=d.findElement(c1);
-		d1.sendKeys("EFGH");
+		d1.sendKeys("rgfer");
 		
 		Thread.sleep(2000);
 		
 		By c2=By.xpath("//input[ @data-qa=\"signup-email\"]");
 		WebElement d2=d.findElement(c2);
-		d2.sendKeys("efgh@1234");
+		d2.sendKeys("dgferg@1234");
 		
 		Thread.sleep(2000);
 		
