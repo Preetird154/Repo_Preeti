@@ -135,16 +135,32 @@ public class Cyclos {
 		
 		Thread.sleep(2000);
 		
-		By password=By.xpath("(//input[@type=\"password\"])[1]");
+		By password=By.xpath("//input[@id=\"id_7\"]");
 		WebElement Password=d.findElement(password);
 		Password.sendKeys("5534");
 		
 		Thread.sleep(2000);
 		
-		By re_password=By.id("id_26");
-		WebElement re_Password=d.findElement(re_password);
-		re_Password.sendKeys("5534");
+		By Re_pass=By.xpath("//input[@id=\"id_8\"]");
+		WebElement Re_Pass=d.findElement(Re_pass);
+		Re_Pass.sendKeys("5534");
 		
 		Thread.sleep(2000);
+		
+		By a=By.xpath("//label[@class=\"custom-control-label\"]");
+		WebElement A=d.findElement(a);
+		A.click();
+		
+		Thread.sleep(2000);
+		
+		By captcha=By.xpath("//span[@class=\"recaptcha-checkbox goog-inline-block recaptcha-checkbox-unchecked rc-anchor-checkbox recaptcha-checkbox-checked\"]");
+		WebElement Captcha=d.findElement(captcha);
+		Captcha.click();
+		
+		Thread.sleep(2000);
+		
+		By submit=By.xpath("//button[@class=\"btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary\"]");
+		WebElement Submit=d.findElement(submit);
+		Submit.click();
 	}
 }
