@@ -61,5 +61,90 @@ public class Cyclos {
 		WebElement B=d.findElement(b);
 		B.click();
 		
-
+		Thread.sleep(2000);
+		
+		By sel=By.xpath("//a[@id=\"business_type_clothing\"]");
+		WebElement select=d.findElement(sel);
+		select.click();
+		
+		Thread.sleep(2000);
+		
+		By num=By.id("id_4");
+		WebElement number=d.findElement(num);
+		number.sendKeys("8134567892");
+		
+		Thread.sleep(2000);
+		
+//		By eye=By.xpath("(//button[@class=\"btn btn-icon d-flex align-content-center\"])[4]");
+//		WebElement Eye=d.findElement(eye);
+//		Eye.click();
+		
+		//Thread.sleep(2000);
+		
+//		By land_line=By.id("id_5");
+//		WebElement Land_Line=d.findElement(land_line);
+//		Land_Line.sendKeys("08413");
+//		
+//		Thread.sleep(2000);
+		
+		By e=By.xpath("(//label[@class=\"custom-control-label\"])[3]");
+		WebElement E=d.findElement(e);
+		E.click();
+		
+		Thread.sleep(2000);
+		
+		By address=By.xpath("//input[@id=\"addressLine1\"]");
+		WebElement Address=d.findElement(address);
+		Address.sendKeys("BTM Layout");
+		
+		Thread.sleep(2000);
+		
+		By zip=By.xpath("//input[@id=\"zip\"]");
+		WebElement Zip=d.findElement(zip);
+		Zip.sendKeys("560076");
+		
+		Thread.sleep(2000);
+		
+		By city=By.xpath("//input[@id=\"city\"]");
+		WebElement City=d.findElement(city);
+		City.sendKeys("Bangalore");
+		
+		Thread.sleep(2000);
+		
+		By state=By.xpath("//input[@id=\"region\"]");
+		WebElement State=d.findElement(state);
+		State.sendKeys("Karnataka");
+		
+		Thread.sleep(2000);
+		
+		By country=By.xpath("//button[@id=\"country\"]");
+		WebElement Country=d.findElement(country);
+		Country.click();
+		
+		Thread.sleep(2000);
+		
+		By sel1=By.xpath("//a[@id=\"country_IN\"]");
+		WebElement select1=d.findElement(sel1);
+		select1.click();
+		
+		Thread.sleep(2000);
+		
+		By next=By.xpath("//button[@class=\"btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary\"]");
+		WebElement Next=d.findElement(next);
+		Next.click();
+		
+		Thread.sleep(2000);
+		
+		By password=By.xpath("(//input[@type=\"password\"])[1]");
+		WebElement Password=d.findElement(password);
+		Password.sendKeys("5534");
+		
+		Thread.sleep(2000);
+		
+		By re_password=By.id("id_26");
+		WebElement re_Password=d.findElement(re_password);
+		re_Password.sendKeys("5534");
+		
+		Thread.sleep(2000);
+	}
 }
