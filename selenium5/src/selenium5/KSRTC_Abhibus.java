@@ -12,7 +12,7 @@ public class KSRTC_Abhibus {
 		
 		d.manage().window().maximize();
 		
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		
 		By from=By.xpath("//input[@id=\"source\"]");
 		WebElement From=d.findElement(from);
