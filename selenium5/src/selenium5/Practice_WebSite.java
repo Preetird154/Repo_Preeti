@@ -2,6 +2,7 @@ package selenium5;
 
 import java.util.List;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -44,13 +45,13 @@ public class Practice_WebSite {
 		
 		By c1=By.xpath("//input[ @data-qa=\"signup-name\"]");
 		WebElement d1=d.findElement(c1);
-		d1.sendKeys("rgfer");
+		d1.sendKeys("rsfer");
 		
 		Thread.sleep(2000);
 		
 		By c2=By.xpath("//input[ @data-qa=\"signup-email\"]");
 		WebElement d2=d.findElement(c2);
-		d2.sendKeys("dgferg@1234");
+		d2.sendKeys("dgftug@1234");
 		
 		Thread.sleep(2000);
 		
@@ -167,5 +168,23 @@ public class Practice_WebSite {
 		By create=By.xpath("//button[@data-qa=\"create-account\"]");
 		WebElement create_account=d.findElement(create);
 		create_account.click();
+		
+		Thread.sleep(2000);
+		
+		By cont=By.xpath("//a[@class=\"btn btn-primary\"]");
+		WebElement C=d.findElement(cont);
+		C.click();
+		
+		Thread.sleep(2000);
+		
+		By delete=By.xpath("//a[text()=\" Delete Account\"]");
+		WebElement Delete=d.findElement(delete);
+		Delete.click();
+		
+		Thread.sleep(2000);
+		
+		By cont1=By.xpath("//a[@class=\"btn btn-primary\"]");
+		WebElement C1=d.findElement(cont1);
+		C1.click();
 	}
 }

@@ -14,24 +14,33 @@ public class Orange_HRM {
 		d.manage().window().maximize();
 		Thread.sleep(3000);
 		
-		By b=By.xpath("//input[@name=\"username\"]");
-		WebElement ele=d.findElement(b);
-		ele.sendKeys("Admin");
+		By u_name=By.xpath("//input[@name=\"username\"]");
+		WebElement U_name=d.findElement(u_name);
+		U_name.sendKeys("Admin");
 		
 		Thread.sleep(3000);
 		
-		By b1=By.xpath("//input[@name=\"password\"]");
-		WebElement ele1=d.findElement(b1);
-		ele1.sendKeys("admin123");
+		By pwd=By.xpath("//input[@name=\"password\"]");
+		WebElement Pwd=d.findElement(pwd);
+		Pwd.sendKeys("admin123");
+		
+		Thread.sleep(3000);
+
+		By login=By.xpath("//button[ text()=\" Login \"]");
+		WebElement Login=d.findElement(login);
+		Login.click();
 		
 		Thread.sleep(3000);
 		
-
-		By b2=By.xpath("//button[ text()=\" Login \"]");
-		WebElement ele2=d.findElement(b2);
-		ele2.click();
+		By profile = By.xpath("//i[@class=\"oxd-icon bi-caret-down-fill oxd-userdropdown-icon\"]");
+		WebElement Profile = d.findElement(profile);
+		Profile.click();
 		
-
+		Thread.sleep(3000);
+		
+		By logout = By.xpath("(//a[@class=\"oxd-userdropdown-link\"])[4]");
+		WebElement Logout = d.findElement(logout);
+		Logout.click();
 	}
 
 }
