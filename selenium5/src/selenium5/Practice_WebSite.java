@@ -19,27 +19,27 @@ public class Practice_WebSite {
 		
 		//FOR LOGIN TO YOUR ACCOUNT
 		
-		By b1=By.xpath("//a[i[@class=\"fa fa-lock\"]]");
-		WebElement e1=d.findElement(b1);
-		e1.click();
+		By login=By.xpath("//a[i[@class=\"fa fa-lock\"]]");
+		WebElement Login=d.findElement(login);
+		Login.click();
 		
 		Thread.sleep(2000);
 		
-		By b2=By.xpath("//input[ @data-qa=\"login-email\"]");
-		WebElement e2=d.findElement(b2);
-		e2.sendKeys("sdfg@gmail.com");
+		By email=By.xpath("//input[ @data-qa=\"login-email\"]");
+		WebElement Email=d.findElement(email);
+		Email.sendKeys("sdfg@gmail.com");
 		
 		Thread.sleep(2000);
 		
-		By b3=By.xpath("//input[ @data-qa=\"login-password\"]");
-		WebElement e3=d.findElement(b3);
-		e3.sendKeys("abcd@1234");
+		By pwd=By.xpath("//input[ @data-qa=\"login-password\"]");
+		WebElement Pwd=d.findElement(pwd);
+		Pwd.sendKeys("abcd@1234");
 		
 		Thread.sleep(2000);
 		
-		By b4=By.xpath("//button[ @data-qa=\"login-button\"]");
-		WebElement e4=d.findElement(b4);
-		e4.click();
+		By log=By.xpath("//button[ @data-qa=\"login-button\"]");
+		WebElement Log=d.findElement(log);
+		Log.click();
 		
 		// FOR NEW USER SIGNUP
 		
