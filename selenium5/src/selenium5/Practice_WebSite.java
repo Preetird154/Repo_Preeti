@@ -2,6 +2,7 @@ package selenium5;
 
 import java.util.List;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,39 +19,39 @@ public class Practice_WebSite {
 		
 		//FOR LOGIN TO YOUR ACCOUNT
 		
-		By b1=By.xpath("//a[i[@class=\"fa fa-lock\"]]");
-		WebElement e1=d.findElement(b1);
-		e1.click();
+		By login=By.xpath("//a[i[@class=\"fa fa-lock\"]]");
+		WebElement Login=d.findElement(login);
+		Login.click();
 		
 		Thread.sleep(2000);
 		
-		By b2=By.xpath("//input[ @data-qa=\"login-email\"]");
-		WebElement e2=d.findElement(b2);
-		e2.sendKeys("sdfg@gmail.com");
+		By email=By.xpath("//input[ @data-qa=\"login-email\"]");
+		WebElement Email=d.findElement(email);
+		Email.sendKeys("sdfg@gmail.com");
 		
 		Thread.sleep(2000);
 		
-		By b3=By.xpath("//input[ @data-qa=\"login-password\"]");
-		WebElement e3=d.findElement(b3);
-		e3.sendKeys("abcd@1234");
+		By pwd=By.xpath("//input[ @data-qa=\"login-password\"]");
+		WebElement Pwd=d.findElement(pwd);
+		Pwd.sendKeys("abcd@1234");
 		
 		Thread.sleep(2000);
 		
-		By b4=By.xpath("//button[ @data-qa=\"login-button\"]");
-		WebElement e4=d.findElement(b4);
-		e4.click();
+		By log=By.xpath("//button[ @data-qa=\"login-button\"]");
+		WebElement Log=d.findElement(log);
+		Log.click();
 		
 		// FOR NEW USER SIGNUP
 		
 		By c1=By.xpath("//input[ @data-qa=\"signup-name\"]");
 		WebElement d1=d.findElement(c1);
-		d1.sendKeys("rgfer");
+		d1.sendKeys("rsfer");
 		
 		Thread.sleep(2000);
 		
 		By c2=By.xpath("//input[ @data-qa=\"signup-email\"]");
 		WebElement d2=d.findElement(c2);
-		d2.sendKeys("dgferg@1234");
+		d2.sendKeys("dgftug@1234");
 		
 		Thread.sleep(2000);
 		
@@ -167,5 +168,23 @@ public class Practice_WebSite {
 		By create=By.xpath("//button[@data-qa=\"create-account\"]");
 		WebElement create_account=d.findElement(create);
 		create_account.click();
+		
+		Thread.sleep(2000);
+		
+		By cont=By.xpath("//a[@class=\"btn btn-primary\"]");
+		WebElement C=d.findElement(cont);
+		C.click();
+		
+		Thread.sleep(2000);
+		
+		By delete=By.xpath("//a[text()=\" Delete Account\"]");
+		WebElement Delete=d.findElement(delete);
+		Delete.click();
+		
+		Thread.sleep(2000);
+		
+		By cont1=By.xpath("//a[@class=\"btn btn-primary\"]");
+		WebElement C1=d.findElement(cont1);
+		C1.click();
 	}
 }
