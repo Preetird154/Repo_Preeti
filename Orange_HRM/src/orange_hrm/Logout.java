@@ -14,16 +14,17 @@ public class Logout extends Login {
     	WebElement Profile = driver.findElement(profile);
     	return Profile;
     }
-	public static void profile() 
-	{
-		GetProfile().click();
-	}
-	
-	
-	public static WebElement GetLogout()
+    
+    public static WebElement GetLogout()
 	{
 		WebElement Logout = driver.findElement(logout);
 		return Logout;
+	}
+    
+    
+	public static void profile() 
+	{
+		GetProfile().click();
 	}
 	
 	public static void logout() 
