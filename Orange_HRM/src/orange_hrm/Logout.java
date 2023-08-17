@@ -8,17 +8,27 @@ public class Logout extends Login {
 	static By profile = By.xpath("//i[@class=\"oxd-icon bi-caret-down-fill oxd-userdropdown-icon\"]");
 	static By logout = By.xpath("(//a[@class=\"oxd-userdropdown-link\"])[4]");
 
-	static WebElement Profile = driver.findElement(profile);
-	static WebElement Logout = driver.findElement(logout);
-
+	
+    public static WebElement GetProfile()
+    {
+    	WebElement Profile = driver.findElement(profile);
+    	return Profile;
+    }
 	public static void profile() 
 	{
-		Profile.click();
+		GetProfile().click();
+	}
+	
+	
+	public static WebElement GetLogout()
+	{
+		WebElement Logout = driver.findElement(logout);
+		return Logout;
 	}
 	
 	public static void logout() 
 	{
-		Logout.click();
+		GetLogout().click();
 	}
 
 }

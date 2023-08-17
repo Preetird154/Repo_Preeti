@@ -9,23 +9,41 @@ import org.openqa.selenium.WebElement;
 	static By pwd=By.xpath("//input[@name=\"password\"]");
 	static By login=By.xpath("//button[ text()=\" Login \"]");
 	
-	static WebElement U_name=driver.findElement(u_name);
-    static WebElement Pwd=driver.findElement(pwd);
-	static WebElement Login=driver.findElement(login);
 	
+	public static WebElement GetUname()
+	{
+		WebElement U_name=driver.findElement(u_name);
+		return U_name;
+	}
 	
 	public static void username() 
 	{
-		U_name.sendKeys("Admin");
+		GetUname().sendKeys("Admin");
+	}
+	
+	
+	
+	public static WebElement GetPwd()
+	{
+		WebElement Pwd=driver.findElement(pwd);
+		return Pwd;
 	}
 	
 	public static void password()
 	{
-		Pwd.sendKeys("admin123");
+		GetPwd().sendKeys("admin123");
 	}
 	
+	
+	
+	
+	public static WebElement GetLogin()
+	{
+		WebElement Login=driver.findElement(login);
+		return Login;
+	}
 	public static void login()
 	{
-		Login.click();
+		GetLogin().click();
 	}	
 }
