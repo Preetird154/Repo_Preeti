@@ -19,28 +19,23 @@ public class Example extends Base_class{
 	
 	public static WebElement getlname()
 	{
-		//driver.switchTo().frame("iframeResult");
 		WebElement l_name=driver.findElement(lname);
 		return l_name;
 	}
 	
 	public static WebElement getsubmit()
 	{
-		//driver.switchTo().frame("iframeResult");
 		WebElement Submit=driver.findElement(submit);
 		return Submit;
 	}
 	
 	public static void f_name() 
 	{
-//		getFname().clear();
-//		Thread.sleep(2000);
 		getFname().sendKeys("Keerthi");
 	}
 	
 	public static void l_name()
 	{
-		//getlname().clear();
 		getlname().sendKeys("suresh");
 	}
 	
@@ -48,7 +43,4 @@ public class Example extends Base_class{
 	{
 		getsubmit().click();
 	}
-	
-	
-	
 }
