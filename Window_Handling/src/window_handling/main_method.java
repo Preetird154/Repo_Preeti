@@ -7,7 +7,7 @@ public class main_method
 		hyr_tutorials.browser();
 		Thread.sleep(2000);
 		
-		hyr_tutorials.button();
+		//hyr_tutorials.button();
 		Thread.sleep(2000);
 	}
 
