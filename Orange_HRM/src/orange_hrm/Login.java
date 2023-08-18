@@ -16,32 +16,29 @@ import org.openqa.selenium.WebElement;
 		return U_name;
 	}
 	
-	public static void username() 
-	{
-		GetUname().sendKeys("Admin");
-	}
-	
-	
-	
 	public static WebElement GetPwd()
 	{
 		WebElement Pwd=driver.findElement(pwd);
 		return Pwd;
 	}
 	
-	public static void password()
-	{
-		GetPwd().sendKeys("admin123");
-	}
-	
-	
-	
-	
 	public static WebElement GetLogin()
 	{
 		WebElement Login=driver.findElement(login);
 		return Login;
 	}
+	
+	public static void username() 
+	{
+		GetUname().sendKeys("Admin");
+	}
+	
+	
+	public static void password()
+	{
+		GetPwd().sendKeys("admin123");
+	}
+	
 	public static void login()
 	{
 		GetLogin().click();

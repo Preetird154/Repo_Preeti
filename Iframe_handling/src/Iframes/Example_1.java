@@ -18,6 +18,4 @@ public class Example_1 extends Example{
 	{
 		getRun().click();
 	}
-	
-
 }
