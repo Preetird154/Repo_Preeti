@@ -17,5 +17,6 @@ public class Example_1 extends Example{
 	public static void run()
 	{
 		getRun().click();
+		driver.close();
 	}
 }
