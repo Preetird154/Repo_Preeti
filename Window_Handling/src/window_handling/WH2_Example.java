@@ -50,7 +50,7 @@ public class WH2_Example {
 				Email.sendKeys("ABCD@gmail.com");
 					
 				Thread.sleep(2000);
-				//d.close();
+			    d.close();
 			}
 		}
 		
