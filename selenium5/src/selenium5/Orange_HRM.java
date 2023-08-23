@@ -1,9 +1,13 @@
 package selenium5;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Orange_HRM {
 
@@ -12,11 +16,13 @@ public class Orange_HRM {
 		d.get("https://opensource-demo.orangehrmlive.com");
 		
 		d.manage().window().maximize();
-		Thread.sleep(3000);
+        WebDriverWait wait=new WebDriverWait(d,Duration.ofSeconds(5));
+        WebElement u_name=wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath("//input[@name='username']"))));
+        u_name.sendKeys("Admin");
 		
-		By u_name=By.xpath("//input[@name=\"username\"]");
-		WebElement U_name=d.findElement(u_name);
-		U_name.sendKeys("Admin");
+//		By u_name=By.xpath("//input[@name=\"username\"]");
+//		WebElement U_name=d.findElement(u_name);
+//		U_name.sendKeys("Admin");
 		
 		Thread.sleep(3000);
 		
