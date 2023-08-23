@@ -1,5 +1,6 @@
 package Iframes;
 
+import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,7 +14,7 @@ public class Practice_WebSite {
 		d.get("https://ui.vision/demo/webtest/frames/");
 		
 		d.manage().window().maximize();
-		Thread.sleep(2000);
+		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
 		d.switchTo().frame(0);
 
@@ -83,15 +84,25 @@ public class Practice_WebSite {
 		
 	    Thread.sleep(2000);	
 	    
-	    By frame3_6=By.xpath("//input[@class=\"whsOnd zHQkBf\"]");
+	    By frame3_6=By.xpath("//textarea[@class=\"KHxj8b tL9Q4c\"]");
 	    WebElement Frame3_6=d.findElement(frame3_6);
 	    Frame3_6.sendKeys("hi hello how are you");
 		
 	    Thread.sleep(2000);
 	    
-	    By submit=By.xpath("	(//span[@class=\"l4V7wb Fxmcue\"])[2]");
+	    By submit=By.xpath("(//span[@class=\"l4V7wb Fxmcue\"])[2]");
 	    WebElement Submit=d.findElement(submit);
 	    Submit.click();
+	    
+	    Thread.sleep(2000);
+	    
+	    d.switchTo().parentFrame();
+	    
+	    d.switchTo().frame(0);
+	    
+	    By frame_4=By.xpath("//input[@name='mytext1']");
+	    WebElement Frame_4=d.findElement(frame_4);
+	    Frame_4.sendKeys("EFGH");
 	}
 
 }
