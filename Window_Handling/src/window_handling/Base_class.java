@@ -8,7 +8,7 @@ public class Base_class {
 
 	public static void browser() throws InterruptedException
 	{
-		driver.get("https://www.hyrtutorials.com/p/window-handles-practice.html");
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		driver.manage().window().maximize();
 		Thread.sleep(2000);
 		

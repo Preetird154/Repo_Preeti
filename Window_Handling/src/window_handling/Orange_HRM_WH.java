@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Orange_HRM_WH {
-	@SuppressWarnings("unlikely-arg-type")
+	//@SuppressWarnings("unlikely-arg-type")
 	public static void main(String[] args) throws InterruptedException {
 		
 		WebDriver d=new ChromeDriver();
