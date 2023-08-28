@@ -5,7 +5,7 @@ public class String_Built_In_Functions {
 		
 		String s1="Hi Hello";
 		String s2="Hi how are you";
-		String s3="             Hi Hello";
+		String s3="             Hi Hello              ";
 		
 		int a=s1.codePointAt(4);
 		System.out.println("codePointAt()==returns an integer representing the Unicode point value : "+a);
@@ -125,6 +125,7 @@ public class String_Built_In_Functions {
 //		The dot “.” in the string signifies that there can be any character before the string in the bracket and 
 //		the steric “*” signifies that these characters can be in any number.
 		
+		
 		boolean w=s1.matches("(.*)Hello(.*)");
 		System.out.println("matches()== "+w);
 		System.out.println("==========================");
@@ -197,6 +198,14 @@ public class String_Built_In_Functions {
 		
 		String k1=s3.trim();
 		System.out.println("trim()== "+k1);
+		System.out.println("==========================");
+		
+		String l1=s3.stripLeading();
+		System.out.println("stripLeading()== "+l1);
+		System.out.println("==========================");
+		
+		String m1=s3.stripTrailing();
+		System.out.println("stripTrailing()== "+m1);
 		System.out.println("==========================");
 	}
 
