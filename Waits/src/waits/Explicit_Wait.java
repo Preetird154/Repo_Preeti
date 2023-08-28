@@ -1,7 +1,6 @@
 package waits;
 
 import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,5 +23,4 @@ public class Explicit_Wait {
 		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()=\"Facebook\"]"))).click();
 	}
-
 }
