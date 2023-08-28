@@ -28,7 +28,7 @@ public class Fluent_Wait {
 		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//button[@class=\"my_buttons\"])[5]"))).click();
 		
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//button[@class=\"my_buttons\"])[6]"))).click();
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//button[@class=\"my_buttons\"])[6]"))).click();
 		
 //		By btn1=By.xpath("(//button[@class=\"my_buttons\"])[4]");
 //		WebElement Btn1=d.findElement(btn1);
